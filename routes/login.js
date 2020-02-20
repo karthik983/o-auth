@@ -27,7 +27,6 @@ router.post("/", (req, res) => {
                     throw err;
                 } else {
                     console.log("Success!")
-                    // res.send("Registered Succesfully!")
                     res.redirect("/user/login");
                    
                 }
@@ -74,18 +73,6 @@ router.post("/login/result", (req, res) => {
 
 })
 
-// if (existing_data.email == JSON.parse(data.toString()).email) {
-//     bcrypt.compare(existing_data.password, JSON.parse(data.toString()).password, function (err, result) {
-//         // result == true
-//         if (result == true) {
-//             res.send("Login Succesful!")
-//         } else {
-//             res.send("<h1>The passwords don't Match!</h1>")
-//         }
-//     });
-// } else {
-//     res.send("<h1>The Emails don't match!</h1>")
-// }
 
 
 
